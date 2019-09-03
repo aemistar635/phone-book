@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<style type="text/css">
+  .bdr{
+    
+    border: 2px solid red;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .clr-green{
+    color:green;
+  }
+  .long-text{
+    width: 98% !important;
+  }
+  .sign-up{
+    width:100% !important;
+  }
+  .sign-up-table{
+    margin-left: 12%;
+  }
+</style>
+<?php require 'common/top_header.php' ?>
+
+<body>
+  <div id="main">
+    <?php require 'common/nav_header.php' ?>
+
+    <div id="content_header"></div>
+    <div id="site_content">
+
+        <h1 class="bdr text-center">Welcome to the <span class="clr-green">PaKisTan</span> Phone Book Directory</h1>
+
+        <h1 class="bdr text-center">Insert-Contact</h1>
+        <hr></hr>
+        <!-- insert the page content here -->
+          <form action="#" class="bdr" method="post">
+          <div class="form_settings text-center">
+            <table class="sign-up-table">
+              <tr>
+                  <td colspan="2">
+                    <input type="text" class="long-text" name="cat_name" placeholder="Enter Category" required/>
+                  </td>
+              </tr>
+             <tr>
+              <td colspan="2"><input class="submit sign-up" type="submit" name="btn_save" value="SAVE CATEGORY" /></td>
+             </tr>
+            </table>
+            
+          </div>
+        </form>
+  </div>
+    <?php require 'common/footer.php' ?>
+  </div>
+</body>
+</html>
